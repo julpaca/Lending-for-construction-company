@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="css/swiper-styles.css">
+  <link
+          rel="stylesheet"
+          href="https://unpkg.com/swiper/swiper-bundle.min.css"
+        />
+  <link rel="stylesheet" href="css/style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <header>
+    <div class="header-container">
+      <div class="container header-content">
+        <button class="hamburger" type="button" tabindex="1">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+          <ul class="burger-menu">
+            <li class="burger-menu-item" tabindex="2">item 1</li>
+            <li class="burger-menu-item" tabindex="3">item 2</li>
+            <li class="burger-menu-item" tabindex="4">item 3</li>
+            <li class="burger-menu-item" tabindex="5">item 4</li>
+          </ul>
+        </button>
+
+        <div class="header-logo">
+          <img src="img/header-logo.svg" alt="Логотип компании Евклид" width="100%" height="100%" tabindex="6">
+        </div>
+        <nav class="header-nav">
+          <ul class="header-nav-list" aria-label="основная информация">
+            <li class="header-nav-item" tabindex="7">О нас</li>
+            <li class="header-nav-item" tabindex="8">Этапы</li>
+            <li class="header-nav-item" tabindex="9">Отзывы</li>
+            <li class="header-nav-item" tabindex="10">FAQ</li>
+            <li class="header-nav-item" tabindex="11">Контакты</li>
+            <li class="header-nav-item" tabindex="11">Обратная связь</li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="first-section">
+      <div class="container">
+        <div class="first-section-content">
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide swiper-slide-1" style="background-image: url(img/slide1.jpg)"></div>
+              <div class="swiper-slide swiper-slide-2" style="background-image: url(img/slide2.jpg)"
+                role="presentation"></div>
+              <div class="swiper-slide swiper-slide-3" style="background-image: url(img/slide3.jpg)"
+                role="presentation"></div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+          <div class="slider-content">
+            <h1 class="first-section-title">Проектные решения любой сложности</h1>
+            <p class="first-section-text">
+              Мы строим, вы отдыхаете.
+            </p>
+            <button href="#" class="first-section-btn btn" tabindex="13"><a href="#">Заказать расчёт</a></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="about">
+      <div class="container about-container">
+        <h2 class="section-title about-title">О нас</h2>
+        <p class="about-text">СК "Евклид" уже более 24 лет на рынке строительных услуг.
+
+          Мы разрабатываем проекты, строим загородные дома по каркасной технологии, из газобетона, сухого профилированного бруса, из бревна ручной рубки.
+          
+          Выполняем работы по ремонту, отделке, реконструкции загородной недвижимости.
+          
+          Объекты ведем круглогодично. Качество наших услуг проверено временем и подтверждено отзывами сотен благодарных клиентов.
+          
+          В штате фирмы профессиональные русские бригады строителей, собственные производственные мощности.
+          
+          Индивидуальный подход к каждому клиенту, информационная поддержка и удобная схема оплаты гарантируют качественный результат сотрудничества.</p>
+        <div class="about-ad-content">
+          <div class="about-ad-1">
+            <img class="about-ad-1-img" src="img/about-first.jpg" width="290px" height=" 200px" role="presentantion"
+              alt="строитель с молотком">
+            <div class="about-ad-1-content">
+              <p class="about-ad-1-text">Построить дом в рассрочку теперь реальность! Для вас беспроцентная рассрочка на строительство дачи, загородного дома без участия банка.</p>
+              <button class="btn about-ad-1-btn" tabindex="15">Подробнее</button>
+            </div>
+          </div>
+          <div class="about-ad-2">
+            <p class="about-ad-2-text">
+              <span class="about-ad-first-line">
+                Можем приступить к работам на этапе отделки фасада или возведения кровли. 
+              </span>
+              <br>
+              Можем приступить к работам на этапе отделки фасада или возведения кровли. 
+Мы с легкостью выполняем самые сложные задачи.
+            </p>
+          </div>
+          <div class="about-ad-3">
+            <p class="about-ad-3-text">
+              <span class="about-ad-first-line">
+                Доверив строительство дома нам, вы будете уверены, что он в надёжных руках!
+              </span>
+              <br>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="working">
+      <div class="container working-container">
+        <h2 class="section-title working-title">Как мы работаем</h2>
+
+        <div class="swiper swiper-working">
+          
+          <div class="swiper-wrapper">
+            
+            <div class="swiper-slide working-steps">
+              <h3 class="working-steps-counter">1 шаг</h3>
+              <div class="working-steps-img first-step-img" role="presentation"></div>
+              <h3 class="working-step-heading">Проводим консультацию</h3>
+              <p class="working-steps-text">
+                Выберите проект на нашем или стороннем сайте, или пришлите свой эскиз дома на электронную почту. Обсуждаем с вами назначение дома, комплектацию, этапы строительства и пр. По результатам обсуждения бесплатно предоставим вам разверну тую смету.
+              </p>
+                <div class="working-steps-btns">
+                  <button class="btn working-steps-more-btn" tabindex="20"
+                    aria-label="Ссылка на более подробную информацию">Подробнее</button>
+                  <button class="working-steps-contract-btn" tabindex="21"
+                    aria-label="Ссылка на подписание договора">Договор</button>
+                </div>
+              
+                
+            </div>
+
+            <div class="swiper-slide working-steps">
+              <h3 class="working-steps-counter">2 шаг</h3>
+              <div class="working-steps-img scnd-step-img" role="presentation"></div>
+              <h3 class="working-step-heading">Проектирование и составление договора</h3>
+              <p class="working-steps-text">
+                Самый интересный и творческий этап для вас - это проектирование вашего будущего дома вместе с архитектором компании. По утвержденному проекту составляем итоговую смету, подписываем договор подряда. Вы вносите предоплату 30% от суммы договора.</p>
+                <div class="working-steps-btns">
+                  <button class="btn working-steps-more-btn" tabindex="20"
+                    aria-label="Ссылка на более подробную информацию">Подробнее</button>
+                  <button class="working-steps-contract-btn" tabindex="21"
+                    aria-label="Ссылка на подписание договора">Договор</button>
+                </div>
+              
+                
+            </div>
+
+            <div class="swiper-slide working-steps">
+              <h3 class="working-steps-counter">3 шаг</h3>
+              <div class="working-steps-img thd-step-img" role="presentation"></div>
+              <h3 class="working-step-heading">Реализуем проект, вносим правки</h3>
+              <p class="working-steps-text">
+                Доставляем домокомплект. Ведем строительно-отделочные работы. Вы оплачиваете 30% от суммы договора.
+                </p>
+                <div class="working-steps-btns">
+                  <button class="btn working-steps-more-btn" tabindex="20"
+                    aria-label="Ссылка на более подробную информацию">Подробнее</button>
+                  <button class="working-steps-contract-btn" tabindex="21"
+                    aria-label="Ссылка на подписание договора">Договор</button>
+                </div>
+              
+                
+            </div>
+            <div class="swiper-slide working-steps">
+              <h3 class="working-steps-counter">4 шаг</h3>
+              <div class="working-steps-img frth-step-img" role="presentation"></div>
+              <h3 class="working-step-heading">Отдаём готовый проект Вам</h3>
+              <p class="working-steps-text">
+                Сдаем выполненные работы. Подписываем акт сдачи-приемки. Вы оплачиваете остаток 40% от суммы договора.
+              </p>
+                <div class="working-steps-btns">
+                  <button class="btn working-steps-more-btn" tabindex="20"
+                    aria-label="Ссылка на более подробную информацию">Подробнее</button>
+                  <button class="working-steps-contract-btn" tabindex="21"
+                    aria-label="Ссылка на подписание договора">Договор</button>
+                </div>
+              
+                
+            </div>
+      
+        </div>
+      </div>
+      </div>
+    </section>
+
+
+     <section class="reviews">
+      <div class="container reviews-container">
+        <h2 class="section-title reviews-title">Отзывы</h2>
+        <ul class="reviews-list" aria-label="Отзывы наших клиентов">
+          <li class="reviews-item" tabindex="16">
+              <div class="reviews-rating"></div>
+            <span class="reviews-name">Сергей Строганов</span>
+            <p class="reviews-text">
+              "Прекрасная компания, обязательно буду рекомендовать своим друзьям!"
+            </p>
+          </li>
+          <li class="reviews-item" tabindex="17">
+              <div class="reviews-rating"></div>
+            <span class="reviews-name">Александр Меншиков</span>
+            <p class="reviews-text">
+              "Прекрасная компания, обязательно буду рекомендовать своим друзьям!"
+            </p>
+          </li>
+          <li class="reviews-item" tabindex="18">
+              <div class="reviews-rating"></div>
+            <span class="reviews-name">Анна Голицына</span>
+            <p class="reviews-text">
+              "Прекрасная компания, обязательно буду рекомендовать своим друзьям!"
+            </p>
+          </li>
+        </ul>
+
+      </div>
+    </section>
+
+    <section class="faq">
+      <div class="container faq-container">
+        <h2 class="section-title faq-title">Часто задаваемые вопросы</h2>
+        <div id="accordion" class="faq-accordion">
+          <h3 class="accordion-heading accordion-heading-1">Строим ли  мы под ключ?
+          </h3>
+          <div class="accordion-answer">
+            <p>Да, у нас вы можете заказать весь комплекс работ, а именно:
+              <br> 
+              <ul>
+                <li class="accordion-1-list">
+                  сруб, 
+                </li>
+                <li class="accordion-1-list">
+                  фундамент,
+                </li>
+                <li class="accordion-1-list">
+                  кровлю
+                </li> 
+                <li class="accordion-1-list">
+                   отделку под ключ.
+                  </li>
+              </ul>
+            </p>
+          </div>
+          <h3 class="accordion-heading accordion-heading-2">У меня есть свой проект. Сможем ли мы его доработать /
+            реализовать?
+          </h3>
+          <div class="accordion-more">
+            <p>
+              Можно! Наш архитектор разработает для вас проект со всеми вашими пожеланиями и сделает 3D модель вашего будущего дома, а при сомнениях проконсультирует вас и подскажет наиболее подходящий вариант.
+            </p>
+          </div>
+          <h3 class="accordion-heading accordion-heading-3"> Каковые примерные сроки строительства?
+          </h3>
+          <div class="accordion-more">
+            <p>
+              Перед началом строительства дома наш отдел ПТО (производственно-технический отдел) составляет календарный план-график, в котором планируются основные этапы строительства и их продолжительность. Сроки зависят от типа фундамента и подготовки под него, от материалов стен, типа перекрытий и вида кровли. Сроки выполнения отделочных работ зависят от уровня сложности дизайн-проекта интерьера. Обычно капитальная конструкция дома (подготовка, фундамент, стены, перекрытия, кровля) занимает около полугода, а строительство дома под ключ - от года до полутора лет.
+            </p>
+          </div>
+          <h3 class="accordion-heading accordion-heading-4">А сколько стоит построить дом?
+          </h3>
+          <div class="accordion-more">
+            <p>
+              При заключении договора на строительство загородного дома мы составляем подробную смету, которая
+<ul>
+<li class="accordion-more-list">
+  разбита на этапы: подготовительные и земляные работы, устройство фундамента, возведение стен, перекрытий между этажами, устройство кровли, внешняя отделка фасадов (кирпич, штукатурка, вагонка, сайдинг), установка окон и дверей и др.; </li>
+<li class="accordion-more-list">
+  По каждому этапу содержит объём материалов и их стоимость. </li>
+<li class="accordion-more-list">
+  В каждом этапе приведены наименования работ, их объём и стоимость.
+  <li class="accordion-more-list"> </li>
+Содержит дополнительные работы, необходимые для строительства дома (использование спецтехники, доставка материалов, подъездные пути, выкорчёвывание пней, удаление деревьев и др.); </li>
+</ul>
+</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="container footer-content">
+        <div class="footer-left">
+          
+          <nav class="footer-nav">
+            <ul class="footer-nav-list" aria-label="основная информация">
+              <li class="footer-nav-item"><a href="#" tabindex="28">О нас</a></li>
+              <li class="footer-nav-item"><a href="#" tabindex="29">Проекты</a></li>
+              <li class="footer-nav-item"><a href="#" tabindex="30">Отзывы</a></li>
+              <li class="footer-nav-item"><a href="#" tabindex="31">Договор оферты</a></li>
+              <li class="footer-nav-item"><a href="#" tabindex="32">Договор подряда</a></li>
+              <li class="footer-nav-item"><a href="#" tabindex="33">Конфиденциальность</a></li>
+              <li class="footer-nav-item"><a href="#" tabindex="34">Партнёрское соглашение</a></li>
+            </ul>
+          </nav>
+          <div class="footer-social">
+            <div class="footer-social-icon">
+              <img src="img/fb.svg" alt="facebook icon" class="footer-social-fb" width="100%" height="100%"
+                tabindex="35" aria-label="ссылка на фейсбук">
+            </div>
+            <div class="footer-social-icon">
+              <img src="img/vk.svg" alt="vk icon" class="footer-social-vk" width="100%" height="100%" tabindex="36"
+                aria-label="ссылка на вконтакте">
+            </div>
+            <div class="footer-social-icon">
+              <img src="img/instagram.svg" alt="instagram icon" class="footer-social-inst" width="100%" height="100%"
+                tabindex="37" aria-label="ссылка на инстаграмм">
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-middle">
+          <form id="form" class="footer-form" name="form" action = "#">
+            <legend class="titles section-title footer-form-title">Оставить заявку</legend>
+            <input type="text" name="name" placeholder="Фамилия и имя*" class="input footer-form-input" id="name" required tabindex="38">
+            <input type="email" name="email" placeholder="E-mail*" class="input footer-form-input" id="email" required tabindex="39">
+            <textarea name="rewiew" cols="30" rows="7" placeholder="Сообщение" class="titles footer-form-notice" id="rewiew" tabindex="40"></textarea>
+            <div class="titles footer-form-bottom">
+              <button type="submit" id="submit" class="titles footer-form-btn btn" tabindex="41" value="Отправить данные" onclick = "alerting();">Отправить
+                данные</button>
+                
+                <input type="checkbox" checked name="agreement" id="agreement" tabindex="42">
+                <label for="agreement">Согласен на обработку данных</label>
+                <div class="info info-message"></div>
+              </div>
+            </form>
+        </div>
+        <div class="footer-right">
+          <p class="footer-right-text">
+            Мы работаем по Москве и Московской области и по Санкт-Петербургу и Ленинградской области!
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="index.js"></script>
+  <script>
+    var f = document.querySelector('form')
+
+f.addEventListener('submit', function(e) {
+  e.preventDefault();
+  var data = new FormData(this) // Сборка формы 
+  var url = 'https://jsonplaceholder.typicode.com/posts'
+  fetch(url, {
+      method: 'post',
+      headers: {
+        "Content-type": "application/x-www-form-urlencoded; charset=UTF-8"
+      },
+      body: data // Отправка самой формы
+    })
+    .then(response => response.json())
+    .then((json) => { // Ответ
+      if (json.id === 101) { // Для примера проверка пройдена если id === 101
+        // Добавление поля
+        var info = document.querySelector('.info')
+        info.innerText = 'Благодарим за заявку!'
+      }
+      // Дебаг узнать что прошла форма
+      console.log(json)
+    })
+    .catch(err => console.log(err));
+})
+  </script>
+</body>
+
+</html>
